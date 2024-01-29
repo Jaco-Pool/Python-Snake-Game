@@ -14,27 +14,24 @@ screen.bgcolor("#1d1d1d")
 turtle.speed(5)
 turtle.pensize(4)
 turtle.penup()
-turtle.goto(-310, 250)
+turtle.goto(-310 -2, 250 + 2)
 turtle.pendown()
 turtle.color("red")
-turtle.forward(600)
+turtle.setx(310 + 2) # move the turtle to the right edge of the screen
 turtle.right(90)
-turtle.forward(500)
+turtle.sety(-250 - 2) # move the turtle to the bottom edge of the screen
 turtle.right(90)
-turtle.forward(600)
+turtle.setx(-310 - 2) # move the turtle to the left edge of the screen
 turtle.right(90)
-turtle.forward(600)
-turtle.right(90)
-turtle.forward(500)
+turtle.sety(250 + 2) # move the turtle to the top edge of the screen
 turtle.hideturtle()
-
 # score
 score = 0;
 delay = 0.1
 
 # snake
 snake = turtle.Turtle()
-snake.speed()
+snake.speed(3)
 snake.shape("square")
 snake.color("green")
 snake.penup()
@@ -124,7 +121,7 @@ while True:
     # add to snake
 
     for index in range(len(old_fruit) -1, 0, -1):
-        a = old_fruit[index -1].xor()
+        a = old_fruit[index -1].xcor()
         b = old_fruit[index -1,].ycor()
 
         old_fruit[index].goto(a, b)
@@ -141,7 +138,7 @@ while True:
         screen.clear()
         screen.bgcolor("turquoise")
         scoring.goto(0, 0)
-        scoring.write("      Game Over\n Your score is{}".format(score),align="center", font=("Courier", 30, "bold"))
+        scoring.write("      Game Over\n Your score is {}".format(score),align="center", font=("Courier", 30, "bold"))
 
 # snake collision
 for food in old_fruit:
@@ -150,7 +147,7 @@ for food in old_fruit:
         screen.clear()
         screen.bgcolor("turquoise")
         scoring.goto(0, 0)
-        scoring.write("      Game Over\n Your score is{}".format(score),align="center", font=("Courier", 30, "bold"))
+        scoring.write("      Game Over\n Your score is {}".format(score),align="center", font=("Courier", 30, "bold"))
 
 
 time.sleep(delay)
