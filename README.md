@@ -9,7 +9,7 @@ pip install pygame
 Usage
 To play the game, clone this repository to your local machine and run the snake.py file with Python:
 
-git clone https://github.com/YJaco-Pool/python-snake-game.git
+git clone https://github.com/Jaco-Pool/python-snake-game.git
 cd /python-snake-game
 python snake.py
 
