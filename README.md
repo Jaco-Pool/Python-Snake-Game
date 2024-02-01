@@ -9,8 +9,8 @@ pip install pygame
 Usage
 To play the game, clone this repository to your local machine and run the snake.py file with Python:
 
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
-cd YOUR-REPOSITORY
+git clone https://github.com/YJaco-Pool/python-snake-game.git
+cd /python-snake-game
 python snake.py
 
 You can use the arrow keys to move the snake and the escape key to quit the game. The game will show your score on the top center of the screen. Try to eat as many apples as you can and avoid hitting the walls or yourself.
