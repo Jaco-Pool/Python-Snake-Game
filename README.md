@@ -19,8 +19,7 @@ Contributing
 This project is open for contributions. If you want to add a new feature, fix a bug, or improve the code, feel free to fork this repository and create a pull request. You can also open an issue if you find any problems or have any suggestions.
 
 License
-This project is licensed under the MIT License. See the [LICENSE] file for more details.
-
+This project is licensed under the MIT License.
 To do: 
 Make an executable
 Create GUI (maybe using Qt)
